@@ -44,3 +44,10 @@ a.selected{
 }
 a:hover { background-color:#ff3300} /* Az egérkurzorra színváltással reagál a menüpont. */
 li { display:inline } /* Ez a sor oldja meg, hogy a menüpontok egymás mellé kerüljenek. */
+
+img.jobbra {
+    float: right;
+    margin: 5px 0 5px 5px;
+    border: 2px solid #ddd;
+    padding: 2px;
+}
