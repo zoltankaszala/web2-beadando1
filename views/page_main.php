@@ -23,7 +23,7 @@
 <aside>
     <p>Phasellus wisi nulla...</p>
 </aside>
-<section>
+<section id="main">
     <?php if ($viewData['render']) include($viewData['render']); ?>
 </section>
 <footer>&copy; Felvételi Kft. <?= date("Y") ?></footer>

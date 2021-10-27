@@ -7,7 +7,7 @@
 ### Hírek
 
 - `hirek/index`, `hirek/ervenytelen`,`hirek` - képzések listája
-- `hirek/1` - az 1-es kódú képzés (ha van)
+- `hirek/1` - az 1-es kódú hír (ha van)
 
 
 ### Képzések
