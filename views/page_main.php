@@ -9,10 +9,10 @@
 <body>
 <header>
     <div id="user"><em><?php
-        if ($_SESSION['userid'] != 0) {
-            echo 'Bejelentkezett:' . $_SESSION['userlastname'] . " " . $_SESSION['userfirstname']
-                . " (" . $_SESSION['userlogin'] . ")" ;
-        } ?>
+            if ($_SESSION['userid'] != 0) {
+                echo 'Bejelentkezett:' . $_SESSION['userlastname'] . " " . $_SESSION['userfirstname']
+                    . " (" . $_SESSION['userlogin'] . ")";
+            } ?>
         </em>
     </div>
     <h1 class="header">Felvételi Kft.</h1>
@@ -21,7 +21,10 @@
     <?php echo Menu::getMenu($viewData['selectedItems']); ?>
 </nav>
 <aside>
-    <p>Phasellus wisi nulla...</p>
+    <h2>Felvételi Kft</h2>
+    <p><strong>Cím:</strong> Kecskemét</p>
+    <p><strong>Tel:</strong> 76/123-456</p>
+    <p><strong>E-mail:</strong> <a href="mailto:felveteli@felveteli.hu">felveteli@felveteli.hu</a></p>
 </aside>
 <section id="main">
     <?php if ($viewData['render']) include($viewData['render']); ?>

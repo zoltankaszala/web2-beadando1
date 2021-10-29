@@ -1,0 +1,7 @@
+table#jelentkezesek {
+    border-collapse: collapse;
+}
+table#jelentkezesek td, table#jelentkezesek th  {
+    border: 1px solid #ccc;
+    padding: 4px;
+}
