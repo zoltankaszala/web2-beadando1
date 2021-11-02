@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2021. Okt 29. 10:41
+-- Létrehozás ideje: 2021. Nov 02. 21:35
 -- Kiszolgáló verziója: 10.4.21-MariaDB
--- PHP verzió: 7.4.24
+-- PHP verzió: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,7 +42,9 @@ CREATE TABLE `felhasznalok` (
 
 INSERT INTO `felhasznalok` (`id`, `csaladi_nev`, `utonev`, `bejelentkezes`, `jelszo`, `jogosultsag`) VALUES
 (1, 'Rendszer', 'Admin', 'Admin', '1fae3ce0905862435d03af3ce72aa80d4463f445', '__1'),
-(13, 'Teszt', 'Elek', 'tesztelek', '1fae3ce0905862435d03af3ce72aa80d4463f445', '_1_');
+(13, 'Kis', 'Piroska', 'kispiros', '1fae3ce0905862435d03af3ce72aa80d4463f445', '_1_'),
+(14, 'Vámbéry', 'Ármin', 'vamarmi', '4d26a5bafd3ae19da1c6e8d5a5b1ffddd096411a', '_1_'),
+(15, 'Nagy', 'Béla', 'nagybela', 'fb490698d239444e29681b132d4f887fd5309242', '_1_');
 
 -- --------------------------------------------------------
 
@@ -64,8 +66,8 @@ CREATE TABLE `hir` (
 --
 
 INSERT INTO `hir` (`id`, `cim`, `bevezeto`, `torzs`, `ido`, `felhasznalo_id`) VALUES
-(1, 'Első hír', 'Első hír bevezetője. Első hír bevezetője.Első hír bevezetője.Első hír bevezetője.Első hír bevezetője.Első hír bevezetője.Első hír bevezetője.Első hír bevezetője.Első hír bevezetője.Első hír bevezetője.Első hír bevezetője.Első hír bevezetője.Első hír bevezetője.', 'Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. \r\n\r\nElső hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. \r\n\r\nElső hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. Első hír törzse. ', '2021-10-22 20:55:38', 13),
-(2, 'Második hír', 'Második hír bevezetője. Második hír bevezetője. Második hír bevezetője. Második hír bevezetője. Második hír bevezetője. Második hír bevezetője. Második hír bevezetője. Második hír bevezetője. Második hír bevezetője. Második hír bevezetője. ', 'Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. \r\n\r\nMásodik hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. \r\n\r\nMásodik hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. Második hír törzse. ', '2021-10-22 20:58:20', 1);
+(1, 'Tehetséggondozó foglalkozások', 'Újraindulnak a tehetséggondozó foglalkozások', 'A foglalkozások 2021. november 2-án kezdődnek, melyeken a részvétel az iskola diákjainak ingyenes. A tantárgyak és a termek beosztását honlapunkon hamarosan közzétesszük. Jelentkezés az osztályfőnököknél lehetséges. Határidő: 2021. október 31.', '2021-10-22 20:55:38', 13),
+(2, 'Járványügyi intézkedések', 'Ismét szigorítások kerülnek bevezetésre', 'A kialakult járványhelyzet miatt arra kérjük minden kedves diákunkat és tanárunkat, hogy az iskola teljes területén az orrot és szájat eltakaró maszkot viseljen. Az osztálytermekben minden szünetben szellőztetni kell, valamint rendszeresen kezet kell mosni. ', '2021-10-22 20:58:20', 1);
 
 -- --------------------------------------------------------
 
@@ -1427,7 +1429,7 @@ CREATE TABLE `velemeny` (
 --
 
 INSERT INTO `velemeny` (`id`, `torzs`, `ido`, `hir_id`, `felhasznalo_id`) VALUES
-(1, 'Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. ', '2021-10-26 20:44:19', 2, 13);
+(1, 'Örülök, hogy időben hoztak megfelelő intézkedéseket a diákok és tanárok védelme érdekében. Megnyugtató ilyen környezetbe küldeni gyermekemet.', '2021-10-26 20:44:19', 2, 13);
 
 --
 -- Indexek a kiírt táblákhoz
@@ -1485,7 +1487,7 @@ ALTER TABLE `velemeny`
 -- AUTO_INCREMENT a táblához `felhasznalok`
 --
 ALTER TABLE `felhasznalok`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT a táblához `hir`

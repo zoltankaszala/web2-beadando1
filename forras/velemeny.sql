@@ -40,7 +40,7 @@ CREATE TABLE `velemeny` (
 --
 
 INSERT INTO `velemeny` (`id`, `torzs`, `ido`, `hir_id`, `felhasznalo_id`) VALUES
-(1, 'Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. Első vélemény. ', '2021-10-26 20:44:19', 2, 13);
+(1, 'Örülök, hogy időben hoztak megfelelő intézkedéseket a diákok és tanárok védelme érdekében. Megnyugtató ilyen környezetbe küldeni gyermekemet.', '2021-10-26 20:44:19', 2, 13);
 
 --
 -- Indexek a kiírt táblákhoz

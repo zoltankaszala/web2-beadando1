@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>MVC - PHP</title>
+    <title>Tehetséggondozó</title>
     <link rel="stylesheet" type="text/css" href="<?php echo SITE_ROOT ?>css/main_style.css">
     <?php if ($viewData['style']) echo '<link rel="stylesheet" type="text/css" href="' . $viewData['style'] . '">'; ?>
 </head>
@@ -15,20 +15,20 @@
             } ?>
         </em>
     </div>
-    <h1 class="header">Felvételi Kft.</h1>
+    <h1 class="header">Kecskeméti Tehetséggondozó Gimnázium</h1>
 </header>
 <nav>
     <?php echo Menu::getMenu($viewData['selectedItems']); ?>
 </nav>
 <aside>
-    <h2>Felvételi Kft</h2>
-    <p><strong>Cím:</strong> Kecskemét</p>
+    <h2>Kecskeméti Tehetséggondozó Gimnázium</h2>
+    <p><strong>Cím:</strong> Kecskemét, Diák utca 4.</p>
     <p><strong>Tel:</strong> 76/123-456</p>
-    <p><strong>E-mail:</strong> <a href="mailto:felveteli@felveteli.hu">felveteli@felveteli.hu</a></p>
+    <p><strong>E-mail:</strong> <a href="mailto:felveteli@felveteli.hu">tehetsegert@ktg.hu</a></p>
 </aside>
 <section id="main">
     <?php if ($viewData['render']) include($viewData['render']); ?>
 </section>
-<footer>&copy; Felvételi Kft. <?= date("Y") ?></footer>
+<footer>&copy; Kecskeméti Tehetséggondozó Gimnázium <?= date("Y") ?></footer>
 </body>
 </html>
