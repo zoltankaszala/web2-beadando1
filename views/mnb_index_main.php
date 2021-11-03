@@ -1,10 +1,20 @@
-<?php foreach ($viewData['mnb'] as $mnb) {
-    print_r($mnb);
+<h2>MNB napi árfolyamok</h2>
+<table id="arfolyamok">
+    <tr>
+        <th>Pénznem</th>
+        <th>Árfolyam (Ft)</th>
+    </tr>
+<?php
+$i = 0;
+foreach ($viewData['osszegek'] as $osszeg) {
+
     ?>
-<!--    <article class="hir">-->
-<!--        <h1><a href="--><?php //echo SITE_ROOT ?><!--hirek/--><?php //echo $hir['id']; ?><!--">--><?php //echo $hir['cim']; ?><!--</a></h1>-->
-<!--        <p>--><?php //echo $hir['bejelentkezes']; ?><!-- - --><?php //echo $hir['ido']; ?><!--</p>-->
-<!---->
-<!--        <p>--><?php //echo $hir['bevezeto']; ?><!--</p>-->
-<!--    </article>-->
-<?php } ?>
+    <tr>
+        <td><?php echo $viewData['penznemek'][$i]; ?></td>
+        <td><?php echo $osszeg ?></td>
+    </tr>
+<?php
+    $i++;
+} ?>
+</table>
+

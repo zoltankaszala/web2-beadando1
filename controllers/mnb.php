@@ -9,7 +9,8 @@ class Mnb_Controller
         $retData = $mnb_model -> index();
         $view = new View_Loader($this->baseName."_index_main");
         //átadjuk a lekérdezett adatokat a nézetnek
-        $view->assign('mnb', $retData['mnb']);
+        $view->assign('penznemek', $retData['penznemek']);
+        $view->assign('osszegek', $retData['osszegek']);
 	}
 }
 
