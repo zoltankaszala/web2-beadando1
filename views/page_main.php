@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Tehetséggondozó</title>
     <link rel="stylesheet" type="text/css" href="<?php echo SITE_ROOT ?>css/main_style.css">
+    <script type="text/javascript" src="js/chart.min.js"></script>
     <?php if ($viewData['style']) echo '<link rel="stylesheet" type="text/css" href="' . $viewData['style'] . '">'; ?>
 </head>
 <body>
